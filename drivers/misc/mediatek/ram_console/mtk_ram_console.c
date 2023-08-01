@@ -808,7 +808,7 @@ static int __init ram_console_early_init(void)
 		 * to avoid build error as below for aarch64 case
 		 * (error: cast to 'struct ram_console_buffer *' from
 		 * smaller integer type 'unsigned int'
-		 * [-Werror,-Wint-to-pointer-cast])
+		 * [-Wall,-Wint-to-pointer-cast])
 		 */
 		ram_console_buffer_pa =
 			(struct ram_console_buffer *)(unsigned long)start;

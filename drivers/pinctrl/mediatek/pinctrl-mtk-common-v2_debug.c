@@ -14,7 +14,7 @@
 #include <dt-bindings/pinctrl/mt65xx.h>
 #include <linux/gpio.h>
 #include <linux/gpio/consumer.h>
-#include <../../gpio/gpiolib.h>
+#include "../../gpio/gpiolib.h"
 #include <linux/delay.h>
 #include "pinctrl-paris.h"
 

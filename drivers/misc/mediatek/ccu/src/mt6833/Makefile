@@ -33,6 +33,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/mmp/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/ccu/inc/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/ccu/src/$(platform)/ccu_ext_interface/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/ccu/src/$(platform)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/smi/
 ccflags-y += -I$(srctree)/drivers/i2c/busses/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/mmdvfs/

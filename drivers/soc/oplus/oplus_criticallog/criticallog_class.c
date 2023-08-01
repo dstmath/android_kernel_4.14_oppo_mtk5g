@@ -19,7 +19,7 @@
 #include <linux/device.h>
 #include <linux/fs.h>
 #include <linux/err.h>
-#include <criticallog_class.h>
+#include "criticallog_class.h"
 
 //#ifdef OPLUS_FEATURE_MODEM_MINIDUMP
 #define MAX_REASON_LEN 256

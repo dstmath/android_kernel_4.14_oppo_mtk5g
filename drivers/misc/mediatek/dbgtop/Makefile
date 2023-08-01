@@ -12,5 +12,5 @@
 #
 
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/dbgtop/$(MTK_PLATFORM)
-
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/dbgtop/
 obj-y += dbgtop.o

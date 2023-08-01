@@ -8,6 +8,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/apusys/power/2.0/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/apusys/power/2.0/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/apusys/mnoc/1.0/
 ccflags-y += -I$(srctree)/drivers/clk/mediatek/
+subdir-ccflags-y += -I$(srctree)/drivers/iommu
 
 obj-$(CONFIG_IOMMU_API) += iommu.o
 obj-$(CONFIG_IOMMU_API) += iommu-traces.o

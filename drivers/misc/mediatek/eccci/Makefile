@@ -37,6 +37,9 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/conn_md/include/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/$(MTK_PLATFORM)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/scp/$(MTK_PLATFORM)
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/eccci/
+
+subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/eccci/inc/
 
 # common services
 ccci-y := ccci_core.o ccci_bm.o ccci_modem.o modem_sys1.o

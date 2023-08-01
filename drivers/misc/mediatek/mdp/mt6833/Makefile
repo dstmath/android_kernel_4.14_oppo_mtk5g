@@ -18,7 +18,8 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/mdp \
              -I$(srctree)/drivers/misc/mediatek/smi/ \
              -I$(srctree)/drivers/misc/mediatek/smi/$(MTK_PLATFORM)/ \
              -I$(srctree)/drivers/misc/mediatek/m4u/$(MTK_PLATFORM) \
-             -I$(srctree)/drivers/iommu
+             -I$(srctree)/drivers/iommu \
+             -I$(srctree)/drivers/misc/mediatek/mdp/mt6833
 
 ccflags-$(CONFIG_MTK_CMDQ_MBOX_EXT) += -I$(srctree)/drivers/misc/mediatek/cmdq/mailbox/
 

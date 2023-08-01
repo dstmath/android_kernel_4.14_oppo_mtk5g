@@ -18,6 +18,8 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include/vcorefs_v3/
 ccflags-y += -I$(srctree)/drivers/devfreq/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/qos/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/net/ipv4/
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/perf/
+
 ccflags-$(CONFIG_MTK_CORE_CTL) += -I$(srctree)/drivers/misc/mediatek/base/power/include/ppm_v3/
 ccflags-$(CONFIG_MTK_CORE_CTL) += -I$(srctree)/drivers/misc/mediatek/sched/
 ccflags-$(CONFIG_MTK_CORE_CTL) += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/

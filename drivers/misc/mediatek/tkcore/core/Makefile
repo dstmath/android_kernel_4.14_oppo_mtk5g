@@ -18,7 +18,7 @@ endif
 
 M ?=$(srctree)/drivers/misc/mediatek/tkcore
 
-#ccflags-y+=-Werror
+#ccflags-y+=-Wall
 ccflags-y += -I$(M)/include/linux
 ccflags-y += -I$(M)/include
 ccflags-y += -I$(M)

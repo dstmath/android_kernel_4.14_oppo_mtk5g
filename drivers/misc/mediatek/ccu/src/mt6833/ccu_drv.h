@@ -16,7 +16,7 @@
 
 #include <linux/types.h>
 #include <linux/ioctl.h>
-#include "ccu_mailbox_extif.h"
+#include "ccu_ext_interface/ccu_mailbox_extif.h"
 #include "kd_camera_feature.h"/*for sensoridx enum*/
 
 #ifdef CONFIG_COMPAT

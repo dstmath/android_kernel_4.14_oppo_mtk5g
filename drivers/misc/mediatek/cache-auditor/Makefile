@@ -12,6 +12,7 @@
 #
 
 LINUXINCLUDE += -include $(srctree)/kernel/sched/sched.h
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/cache-auditor
 ifeq ($(or $(strip $(CONFIG_MTK_CACHE_CONTROL)), $(strip $(CONFIG_MTK_CACHE_PARTITION_CTRL))),y)
 	LINUXINCLUDE += -include $(srctree)/drivers/misc/mediatek/base/power/qos/$(MTK_PLATFORM)/mtk_qos_bound.h
 endif

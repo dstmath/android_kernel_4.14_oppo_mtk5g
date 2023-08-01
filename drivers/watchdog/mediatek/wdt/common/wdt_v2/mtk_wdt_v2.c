@@ -30,7 +30,7 @@
 #include <linux/threads.h>
 #include <linux/uaccess.h>
 #include <linux/types.h>
-#include <mtk_wdt.h>
+#include "mtk_wdt.h"
 #include <linux/delay.h>
 #include <mtk_cpufreq_api.h>
 #include <linux/device.h>

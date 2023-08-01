@@ -46,7 +46,7 @@ endif
 ccflags-y += -Wno-error=unused-function
 
 obj-$(CONFIG_MMC_MTK_PRO) += msdc.o
-
+ccflags-y += -I$(srctree)/drivers/mmc/host/mediatek/ComboA
 msdc-y += sd.o
 msdc-y += dbg.o
 msdc-y += mtk_sd_misc.o

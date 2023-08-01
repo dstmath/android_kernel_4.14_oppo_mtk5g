@@ -10,4 +10,7 @@ else
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/sspm/$(CONFIG_MTK_PLATFORM)
 endif
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/$(CONFIG_MTK_PLATFORM)
+
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/sspm/v2/
+subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/sspm/v2/
 ccflags-$(CONFIG_MTK_ENG_BUILD) += -DDEBUG

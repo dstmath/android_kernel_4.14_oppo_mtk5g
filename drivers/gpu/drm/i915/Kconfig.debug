@@ -8,7 +8,7 @@ config DRM_I915_WERROR
         depends on !COMPILE_TEST
         default n
         help
-          Add -Werror to the build flags for (and only for) i915.ko.
+          Add -Wall to the build flags for (and only for) i915.ko.
           Do not enable this unless you are writing code for the i915.ko module.
 
           Recommended for driver developers only.

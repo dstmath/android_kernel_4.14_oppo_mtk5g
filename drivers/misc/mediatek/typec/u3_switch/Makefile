@@ -3,6 +3,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/$(MTK_PLATFORM)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/typec/tcpc/inc
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/typec/u3_switch
 ifeq ($(CONFIG_MTK_USB_TYPEC_U3_MUX_V2), y)
 obj-y += mux.o
 obj-y += mux_switch.o

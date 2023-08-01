@@ -40,7 +40,7 @@ mcDrvModule-y := \
 	xen_fe.o
 
 # Release mode by default
-ccflags-y += -DNDEBUG
+ccflags-y += -DNDEBUG -I$(srctree)/drivers/misc/mediatek/gud/500/MobiCoreDriver
 ccflags-y += -Wno-declaration-after-statement
 
 ccflags-$(CONFIG_TRUSTONIC_TEE_DEBUG) += -DDEBUG
@@ -48,6 +48,5 @@ ccflags-$(CONFIG_TRUSTONIC_TEE_DEBUG) += -DDEBUG
 # MobiCore Driver includes
 ccflags-y += -I$(GUD_ROOT_FOLDER)/MobiCoreDriver
 ccflags-y += -I$(srctree)/drivers/staging/android/ion
-
 # TEE trace
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/tee_sanity/

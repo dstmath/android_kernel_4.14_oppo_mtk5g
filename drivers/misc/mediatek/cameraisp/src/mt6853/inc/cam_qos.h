@@ -13,7 +13,7 @@
 
 #ifndef _CAM_QOS_H
 #define _CAM_QOS_H
-#include "inc/camera_isp.h"
+#include "camera_isp.h"
 
 enum E_QOS_OP {
 	E_QOS_UNKNOWN,

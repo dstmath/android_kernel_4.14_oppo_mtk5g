@@ -44,7 +44,10 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/smi/ \
 	     -I$(srctree)/drivers/iommu/ \
 	     -I$(srctree)/drivers/staging/android/ion \
 	     -I$(srctree)/drivers/staging/android/ion/mtk \
-	     -I$(srctree)/drivers/misc/mediatek/trusted_mem/public
+	     -I$(srctree)/drivers/misc/mediatek/trusted_mem/public \
+		 -I$(srctree)/drivers/misc/mediatek/mdp/
+
+subdir-ccflags-y += -I$(srctree)/drivers/misc/mediatek/mdp/
 
 ccflags-$(CONFIG_MTK_CMDQ_MBOX_EXT) += -I$(srctree)/drivers/misc/mediatek/cmdq/mailbox/
 

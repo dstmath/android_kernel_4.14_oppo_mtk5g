@@ -10,7 +10,7 @@
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 # GNU General Public License for more details.
 #
-ccflags-y += -Werror -I$(srctree)/drivers/devfreq
+ccflags-y += -Wall -I$(srctree)/drivers/devfreq
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/spm/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/dramc/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include/
@@ -30,7 +30,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/qos/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/dbgtop/
 ccflags-y += -I$(srctree)/drivers/watchdog/mediatek/include/
 ccflags-y += -I$(srctree)/include/memory/mediatek/
-
+ccflags-y += -I$(srctree)/drivers/devfreq/helio-dvfsrc-v3/
 ifneq (,$(filter $(CONFIG_MACH_MT6885), y))
 ccflags-y += -DDVFSRC_SMC_CONTROL
 endif

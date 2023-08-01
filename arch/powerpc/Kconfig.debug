@@ -4,11 +4,11 @@ menu "Kernel hacking"
 source "lib/Kconfig.debug"
 
 config PPC_DISABLE_WERROR
-	bool "Don't build arch/powerpc code with -Werror"
+	bool "Don't build arch/powerpc code with -Wall"
 	default n
 	help
 	  This option tells the compiler NOT to build the code under
-	  arch/powerpc with the -Werror flag (which means warnings
+	  arch/powerpc with the -Wall flag (which means warnings
 	  are treated as errors).
 
 	  Only enable this if you are hitting a build failure in the

@@ -26,7 +26,7 @@
 #include <linux/pm_wakeup.h>
 #include <linux/spmi.h>
 #include <linux/pmif.h>
-#include <spmi_sw.h>
+#include "spmi_sw.h"
 #include <dt-bindings/spmi/spmi.h>
 #include <mt-plat/aee.h>
 

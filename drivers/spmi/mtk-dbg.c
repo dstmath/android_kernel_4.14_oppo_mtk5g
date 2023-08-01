@@ -23,7 +23,7 @@
 #include <linux/seq_file.h>
 #include <linux/uaccess.h>
 #include <linux/debugfs.h>
-#include <spmi_sw.h>
+#include "spmi_sw.h"
 #include <mt-plat/aee.h>
 
 enum pmif_dbg_regs {

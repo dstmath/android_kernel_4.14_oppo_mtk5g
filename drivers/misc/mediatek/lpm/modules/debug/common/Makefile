@@ -3,7 +3,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/include/power_gs_v1
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/lpm/inc/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/lpm/mtk_lpm_fs/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/lpm/modules/include/
-
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/lpm/modules/debug/common
 obj-y += mtk_dbg_fs_common.o
 obj-y += mtk_lpm_timer.o
 obj-$(CONFIG_MTK_LPM_GS_DUMP_SUPPORT) += mtk_lpm_pwr_gs.o

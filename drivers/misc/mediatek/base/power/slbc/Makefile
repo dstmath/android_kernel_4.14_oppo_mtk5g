@@ -22,6 +22,7 @@ ccflags-y += \
 	-I$(srctree)/drivers/misc/mediatek/sspm \
 	-I$(srctree)/drivers/misc/mediatek/sspm/$(CONFIG_MTK_PLATFORM) \
 	-I$(srctree)/include \
+	-I$(srctree)/drivers/misc/mediatek/base/power/slbc
 
 MTK_SLBC_MODULE_LOCAL_NAME = mtk_slbc
 MTK_SLBC_MODULE_SRC = slbc.o

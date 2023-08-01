@@ -22,6 +22,8 @@ ccflags-${CONFIG_MACH_MT6833} += -I$(srctree)/drivers/misc/mediatek/smi/mt6833/
 ccflags-${CONFIG_MACH_MT6877} += -I$(srctree)/drivers/misc/mediatek/smi/mt6877/
 ccflags-${CONFIG_MACH_MT6781} += -I$(srctree)/drivers/misc/mediatek/smi/mt6781/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/smi/$(MTK_PLATFORM)/
+ccflags-y += -I$(srctree)/drivers/gpu/drm/mediatek
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/mmdvfs
 
 obj-y += swpm_me.o
 

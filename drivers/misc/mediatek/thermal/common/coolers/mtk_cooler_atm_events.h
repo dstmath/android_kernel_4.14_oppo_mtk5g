@@ -117,8 +117,8 @@ TRACE_EVENT(ATM__pid,
 
 /* This part must be outside protection */
 #undef TRACE_INCLUDE_PATH
-#define TRACE_INCLUDE_PATH ./
+#define TRACE_INCLUDE_PATH .
 #undef TRACE_INCLUDE_FILE
-#define TRACE_INCLUDE_FILE mtk_cooler_atm_events
+#define TRACE_INCLUDE_FILE ../../drivers/misc/mediatek/thermal/common/coolers/mtk_cooler_atm_events
 #include <trace/define_trace.h>
 

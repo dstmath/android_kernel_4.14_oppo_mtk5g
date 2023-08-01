@@ -564,12 +564,12 @@ $(OUTPUT)perf-%: %.o $(PERFLIBS)
 
 ifndef NO_PERF_READ_VDSO32
 $(OUTPUT)perf-read-vdso32: perf-read-vdso.c util/find-vdso-map.c
-	$(QUIET_CC)$(CC) -m32 $(filter -static,$(LDFLAGS)) -Wall -Werror -o $@ perf-read-vdso.c
+	$(QUIET_CC)$(CC) -m32 $(filter -static,$(LDFLAGS)) -Wall -Wall -o $@ perf-read-vdso.c
 endif
 
 ifndef NO_PERF_READ_VDSOX32
 $(OUTPUT)perf-read-vdsox32: perf-read-vdso.c util/find-vdso-map.c
-	$(QUIET_CC)$(CC) -mx32 $(filter -static,$(LDFLAGS)) -Wall -Werror -o $@ perf-read-vdso.c
+	$(QUIET_CC)$(CC) -mx32 $(filter -static,$(LDFLAGS)) -Wall -Wall -o $@ perf-read-vdso.c
 endif
 
 ifndef NO_JVMTI

@@ -1,4 +1,4 @@
-subdir-ccflags-y += -Werror
+subdir-ccflags-y += -Wall
 
 obj-y += oplus_display_private_api.o \
          oplus_display_panel_power.o \

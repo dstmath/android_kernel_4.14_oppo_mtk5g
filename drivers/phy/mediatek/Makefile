@@ -17,4 +17,6 @@ obj-$(CONFIG_MACH_MT6833)		+= phy-mtk-mt6853.o
 #endif
 obj-$(CONFIG_MACH_MT6785)		+= phy-mtk-mt6785.o
 obj-$(CONFIG_MACH_MT6771)		+= phy-mtk-mt6771.o
+
+ccflags-y += -I$(srctree)/drivers/phy/mediatek
 endif

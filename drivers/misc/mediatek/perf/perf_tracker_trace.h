@@ -160,6 +160,6 @@ TRACE_EVENT(tcp_rtt,
 #undef TRACE_INCLUDE_PATH
 #define TRACE_INCLUDE_PATH .
 #undef TRACE_INCLUDE_FILE
-#define TRACE_INCLUDE_FILE perf_tracker_trace
+#define TRACE_INCLUDE_FILE ../../drivers/misc/mediatek/perf/perf_tracker_trace
 /* This part must be outside protection */
 #include <trace/define_trace.h>

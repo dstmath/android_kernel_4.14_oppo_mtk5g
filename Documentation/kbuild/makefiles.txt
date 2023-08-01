@@ -325,7 +325,7 @@ more details, with real examples.
 	the options specified using the non-subdir variants.
 
 	Example:
-		subdir-ccflags-y := -Werror
+		subdir-ccflags-y := -Wall
 
     CFLAGS_$@, AFLAGS_$@
 

@@ -1,6 +1,6 @@
 ifdef CONFIG_KCOV
 
-ifeq ($(call cc-option, -fsanitize-coverage=trace-pc -Werror),)
+ifeq ($(call cc-option, -fsanitize-coverage=trace-pc -Wall),)
     ifneq ($(CONFIG_COMPILE_TEST),y)
         $(error Cannot use CONFIG_KCOV: \
           -fsanitize-coverage=trace-pc is not supported by compiler)
@@ -8,7 +8,7 @@ ifeq ($(call cc-option, -fsanitize-coverage=trace-pc -Werror),)
 endif
 
 ifdef CONFIG_KCOV_ENABLE_COMPARISONS
-    ifeq ($(call cc-option, -fsanitize-coverage=trace-cmp -Werror),)
+    ifeq ($(call cc-option, -fsanitize-coverage=trace-cmp -Wall),)
         ifneq ($(CONFIG_COMPILE_TEST),y)
             $(error Cannot use CONFIG_KCOV_ENABLE_COMPARISONS: \
               -fsanitize-coverage=trace-cmp is not supported by compiler)

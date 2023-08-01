@@ -16,7 +16,7 @@ ccflags-$(CONFIG_MTK_ION)  += -I$(srctree)/drivers/staging/android/ion/mtk
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/mmp/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/include
-
+subdir-ccflags-y += -I$(srctree)/drivers/staging/android/ion
 # ccflags-y += -DION_HISTORY_RECORD
 ifeq ($(CONFIG_MTK_ENG_BUILD), y)
 ccflags-y += -DION_RUNTIME_DEBUGGER=1

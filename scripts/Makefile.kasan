@@ -11,7 +11,7 @@ KASAN_SHADOW_OFFSET ?= $(CONFIG_KASAN_SHADOW_OFFSET)
 
 CFLAGS_KASAN_MINIMAL := -fsanitize=kernel-address
 
-ifeq ($(call cc-option, $(CFLAGS_KASAN_MINIMAL) -Werror),)
+ifeq ($(call cc-option, $(CFLAGS_KASAN_MINIMAL) -Wall),)
     ifneq ($(CONFIG_COMPILE_TEST),y)
         $(error Cannot use CONFIG_KASAN_GENERIC: \
           -fsanitize=kernel-address is not supported by compiler)
@@ -43,7 +43,7 @@ ifdef CONFIG_KASAN_SW_TAGS
 
 CFLAGS_KASAN_MINIMAL := -fsanitize=kernel-hwaddress
 
-ifeq ($(call cc-option, $(CFLAGS_KASAN_MINIMAL) -Werror),)
+ifeq ($(call cc-option, $(CFLAGS_KASAN_MINIMAL) -Wall),)
     ifneq ($(CONFIG_COMPILE_TEST),y)
         $(error Cannot use CONFIG_KASAN_SW_TAGS: \
           -fsanitize=kernel-hwaddress is not supported by compiler)

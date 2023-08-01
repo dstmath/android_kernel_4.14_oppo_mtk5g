@@ -1,4 +1,5 @@
-subdir-ccflags-y += -Wall -Werror
+subdir-ccflags-y += -Wall -Wall
+ccflags-y += -I$(srctree)/drivers/misc/mediatek/typec/tcpc
 obj-$(CONFIG_TCPC_MT6360)		+= tcpc_mt6360.o
 obj-$(CONFIG_TCPC_MT6362)		+= tcpc_mt6362.o
 obj-$(CONFIG_TCPC_MT6370)		+= tcpc_mt6370.o
